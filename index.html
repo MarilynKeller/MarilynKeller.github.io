@@ -81,7 +81,9 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading>
                   <ul>
-                    <li>Janvier 2024: To come. </li>
+                    <li>December 2023: Our paper <a href="https://skel.is.tue.mpg.de/">SKEL</a> received an Honrable mention for Best Paper Award at Siggraph Asia 2023 in Sydney! </li>
+                    <li>June 2022: I started as an intern in <a href="https://tml.stanford.edu/">The Movement Lab</a> at Stanford University.</li>                                     
+                    <li>October 2023: We presented our work on <a href="https://humerusplate.is.tue.mpg.de/">custom implants generation</a> at MICCAI 2023 in Vancouver.</li>                                     
                   </ul>
                 </td>
               </tr>
@@ -89,19 +91,63 @@
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <heading>Research</heading>
                     <p>
-                      My research interests revolve around humans and anatomy. In my PhD I am working on infering the bones' geometry,
+                      My research interests revolve around statistical shape model, graphics, and learning from medical data. 
+                      In my PhD I am working on infering the bones' geometry,
                       and the fat and muscle volumes given the external shape of the body.
                     </p>
                   </td>
-                </tr>
+                </tr> 
             </tbody>
           </table>
 
           <heading>Publications</heading><table style="width:100%;border:0px;border-spacing:20px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <!-- SKEL -->
               <tr>
                 <td valign="top" align="left" width="45%">
-                  <!-- <div class="two_landscape" id='pixie_image'><img height="100%" src='images/pixie.png'></div> -->
+                  <img height="100%" width="auto" src="https://skel.is.tue.mpg.de/media/upload/teaser_2subj.png">
+                </td>
+                <td valign="top" width="55%">
+                  <a href="https://skel.is.tue.mpg.de/">
+                    <papertitle>From Skin to Skeleton: Towards Biomechanically Accurate 3D Digital Humans</papertitle>
+                  </a><br>
+              
+                  <a href="https://ps.is.mpg.de/person/mkeller2">Marilyn Keller</a>,
+                  <a href="https://tml.stanford.edu/people/keenon-werling">Keenon Werling</a>,
+                  <a href="https://yohanshin.github.io/">Soyong Shin</a>,
+                  <a href="https://nmbl.stanford.edu/people/scott-delp/">Scott Delp</a>,
+                  <a href="http://morpheo.inrialpes.fr/people/pujades/">Sergi Pujades</a>,
+                  <a href="https://profiles.stanford.edu/c-karen-liu">C. Karen Liu</a>,
+                  <a href="https://ps.is.mpg.de/person/black" target="_blank" rel="noopener">Michael J. Black</a>
+                  <br>
+                  <em>SIGGRAPH ASIA 2023</em> <br>
+                  <span class="award">
+                    <a class="fakelink award">Honorable Mention for Best Paper</a> <br>
+                  </span>
+                  [<a class="fakelink" href="https://download.is.tue.mpg.de/skel/main_paper.pdf">Paper</a>]
+                  [<a class="fakelink" href="media/upload/supmat.pdf">Supplementary</a>]
+                  [<a class="fakelink" href="#code">Code</a>]
+                  <div class="link2">
+                    [<a class="fakelink" onclick="$(this).siblings('.bibref').slideToggle()">bibtex</a>]
+                    <div class="bibref pre-white-space">
+                      @inproceedings{keller2023skel,
+                      title = {From Skin to Skeleton: Towards Biomechanically Accurate 3D Digital Humans},
+                      author = {Keller, Marilyn and Werling, Keenon and Shin, Soyong and Delp, Scott and Pujades, Sergi and C. Karen, Liu and Black, Michael J.},
+                      booktitle = {ACM ToG, Proc.~SIGGRAPH Asia},
+                      month = dec,
+                      year = {2023},
+                      }
+                    </div>
+                  </div>           
+                  <p>We learn SKEL, a model that upgrades SMPL with more anatomical degrees of freeedom.</p>
+                </td>
+              </tr>
+              
+
+              <!-- OSSO -->
+              <tr>
+                <td valign="top" align="left" width="45%">
                   <img height="100%" width="auto" src="https://ps.is.mpg.de/uploads/publication/image/26967/renderpeople.png">
                 </td>
                 <td valign="top" width="55%">
@@ -134,10 +180,49 @@
                       }
                     </div>
                   </div>
-              
-                  <p>Infering the skeleton mesh from the external appearance</p>
+                  <p>We learn to infer the skeleton mesh from the external appearance.</p>
                 </td>
               </tr>
+
+              <!-- Humerus plates -->
+              <tr>
+                <td valign="top" align="left" width="45%">
+                  <img height="100%" width="auto" src="https://ps.is.mpg.de/uploads/publication/image/27759/0001.png">
+                </td>
+                <td valign="top" width="55%">
+                  <a href="https://humerusplate.is.tue.mpg.de/">
+                    <papertitle>Optimizing the 3D Plate Shape for Proximal Humerus Fractures</papertitle>
+                  </a><br>
+              
+                  <a href="https://ps.is.mpg.de/person/mkeller2">Marilyn Keller</a>,
+                  Marcell Krall, James Smith, Hans Clement, Alexander M. Kerner,
+                  Andreas Gradischar, Ute Schäfer, <a href="https://ps.is.mpg.de/person/black" target="_blank" rel="noopener">Michael J. Black</a>,
+                  <a href="http://morpheo.inrialpes.fr/people/pujades/">Sergi Pujades</a>
+                  <br>
+                  <em>MICCAI 2023</em> <br>
+              
+                  [<a class="fakelink" href="https://humerusplate.is.tue.mpg.de/media/upload/paper2383.pdf">Paper</a>]
+                  [<a class="fakelink" href="https://humerusplate.is.tue.mpg.de/media/upload/supmat2383.pdf">Supplementary</a>]
+                  [<a class="fakelink" href="https://download.is.tue.mpg.de/humerusplate/plate_poster_miccai.pdf">Poster</a>]
+                  [<a class="fakelink" href="https://github.com/MarilynKeller/HumerusPlate">Code</a>]
+                  <div class="link2">
+                    [<a class="fakelink" onclick="$(this).siblings('.bibref').slideToggle()">bibtex</a>]
+                    <div class="bibref pre-white-space">
+                      @inproceedings{Keller:humerusplate:2023,
+                      title = {Optimizing the {3D} Plate Shape for Proximal Humerus Fractures},
+                      author = {Keller, Marilyn and Krall, Marcell and Smith, James and Clement, Hans and Kerner, Alexander M. 
+                                and Gradischar, Andreas and Sch{&auml;}fer, Ute and Black, Michael J and Weinberg, Annelie and Pujades, Sergi},
+                      booktitle = {International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
+                      pages = {487--496},
+                      month = oct,
+                      year = {2023},
+                      }
+                    </div>
+                  </div>
+                  <p>We present a method to extract custom implant 3D shapes and generate sets of implant shapes.</p>
+                </td>
+              </tr>
+              
           
             </tbody>
           </table>
@@ -153,8 +238,7 @@
           </table>
         </td>
       </tr>
-      
-      
+        
   </tbody></table>
 
 
